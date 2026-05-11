@@ -100,8 +100,8 @@ EXPERT_RELEVANCE/
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/Vanshika135-svvv/Expert-Relevance-Determination.git
-cd Expert-Relevance-
+git clone [https://github.com/Vanshika135-svvv/ML-Fundamentals-Project.git](https://github.com/Vanshika135-svvv/ML-Fundamentals-Project.git)
+cd ML-Fundamentals-Project
 ```
 ⚙️ Backend Configuration
 ```
@@ -159,14 +159,16 @@ npm run dev
 ---
 
 ### 🎓 Project Guide
-**Ms. Juhi Shrivastava**
+**Prof. Rohit Choubey**
 
 ---
 
 ### 🏫 Organization
-**Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV)**
+**Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV))**
+**Shri Vaishnav Institute of Information Technology**
+
 
 ---
 
-### 🤝 Collaboration
-**SVVV Minor Project — CSE (AI-IBM)**
+### 🤝 Academic Context
+**BTIBM615N — Fundamentals of Machine Learning**
