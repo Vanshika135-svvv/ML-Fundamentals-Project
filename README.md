@@ -2,18 +2,17 @@
 
 **Aegis RAC (Relevance-based Automated Coordination)** is an AI-powered neural matching engine designed to bridge the gap between **candidate skillsets and expert domains**.
 
-Developed by **Team Aegis AI**, this system leverages **Natural Language Processing (NLP)** to ensure that technical evaluations are handled by the most relevant professionals. It is specifically optimized for the **Recruitment and Assessment Centre (RAC)** workflow.
+Developed by **Team Aegis AI** as part of the **BTIBM615N - Fundamentals of Machine Learning** curriculum, this system leverages core **Natural Language Processing (NLP)** and ML algorithms to ensure that technical evaluations are handled by the most relevant professionals.
 
 ---
 
 # 💎 Key Features
 
-### Neural Relevance Engine
-Uses **TF-IDF vectorization** and **Cosine Similarity** to match profiles with high mathematical precision.
+### Neural Relevance Engine (Core ML)
+Uses **TF-IDF vectorization** and **Cosine Similarity** algorithms to match profiles with high mathematical precision.
 
 ### Hybrid Scoring Logic
-A final relevance score is generated using a weighted formula:
-
+A final relevance score is generated using a weighted machine learning formula:
 - **70% Weight:** Technical skill alignment (NLP Similarity)  
 - **30% Weight:** Professional seniority (Years of Experience)
 
@@ -21,10 +20,7 @@ A final relevance score is generated using a weighted formula:
 A premium **React dashboard** featuring dark-mode aesthetics, glowing neural elements, and fluid animations.
 
 ### Role-Based Access Control (RBAC)
-Specialized and secure environments for:
-- Administrators
-- Experts
-- Candidates
+Specialized and secure environments for Administrators, Experts, and Candidates.
 
 ### Secure Authentication
 Industry-standard password hashing using **PBKDF2 with SHA-256**.
@@ -40,77 +36,61 @@ Automated assignment of top-ranked experts to **live interview sessions stored i
 - **Framework:** React 18  
 - **Styling:** Tailwind CSS (Glassmorphism UI)  
 - **Animations:** Framer Motion  
-- **Icons:** Lucide React  
 
-### Backend
+### Backend & Machine Learning
 - **Language:** Python 3.11+  
 - **Framework:** Flask  
 - **Database:** MongoDB Atlas (NoSQL)
-
-### AI / ML Libraries
-- Scikit-Learn  
-- Pandas  
-- NumPy  
+- **ML Libraries:** Scikit-Learn, Pandas, NumPy  
 
 ---
 
-# 🧠 The AI Engine (Methodology)
+# 🧠 The Machine Learning Methodology
 
-The **brain of Aegis RAC** follows a **4-layer NLP pipeline** to determine expertise relevance.
+The **brain of Aegis RAC** follows a **4-layer NLP pipeline** demonstrating fundamental ML concepts:
 
 ### 1️⃣ Preprocessing
-Raw input is cleaned by:
-- Removing punctuation
-- Converting to lowercase
-- Removing stop words (e.g., *and, the, with*)
+Raw input is cleaned by removing punctuation, converting to lowercase, and eliminating stop words (e.g., *and, the, with*) to reduce data noise.
 
 ### 2️⃣ TF-IDF Vectorization
-Technical skills and course descriptions are converted into **numerical frequency vectors**.
+Technical skills and course descriptions are converted into **numerical frequency vectors** using Term Frequency-Inverse Document Frequency.
 
 ### 3️⃣ Similarity Calculation
-The system calculates **Cosine Similarity** between:
+The system calculates the mathematical **Cosine Similarity** between the candidate's skill vector and available expert vectors.
 
-- Candidate skill vector  
-- Available expert vectors
-
-### 4️⃣ Ranking
-Experts are ranked using the **hybrid scoring model**, balancing:
-
-- Technical knowledge  
-- Professional experience
+### 4️⃣ Ranking Engine
+Experts are ranked using a **hybrid scoring model**, balancing algorithmic technical relevance with human-centric professional experience data.
 
 ---
 
 # 📂 Project Structure
 
-Based on the latest repository architecture:
 ```
 EXPERT_RELEVANCE/
 
 ├── backend/
-│ ├── src/
-│ │ ├── init.py
-│ │ ├── relevance_engine.py # TF-IDF & similarity logic
-│ │ └── text_processor.py # NLP cleaning & normalization
-│ │
-│ ├── .env # Database secrets & configuration
-│ ├── main.py # Flask API entry point
-│ └── .venv/ # Python virtual environment
+│   ├── src/
+│   │   ├── init.py
+│   │   ├── relevance_engine.py  # TF-IDF & similarity logic
+│   │   └── text_processor.py    # NLP cleaning & normalization
+│   │
+│   ├── .env            # Database secrets & configuration
+│   ├── main.py         # Flask API entry point
+│   └── .venv/          # Python virtual environment
 │
 ├── frontend/
-│ ├── public/ # Static assets & index.html
-│ │
-│ ├── src/
-│ │ ├── components/ # Admin, Expert & Candidate dashboards
-│ │ ├── App.js # Routing & security shields
-│ │ ├── App.css # Global styles
-│ │ └── index.js # React entry point
-│ │
-│ ├── package.json # JavaScript dependencies
-│ └── tailwind.config.js # UI design system
+│   ├── public/         # Static assets & index.html
+│   │
+│   ├── src/
+│   │   ├── components/ # Admin, Expert & Candidate dashboards
+│   │   ├── App.js      # Routing & security shields
+│   │   ├── App.css     # Global styles
+│   │   └── index.js    # React entry point
+│   │
+│   ├── package.json    # JavaScript dependencies
+│   └── tailwind.config.js # UI design system
 │
 └── README.md
-
 ```
 
 ---
