@@ -1,8 +1,8 @@
-Flask==3.0.3
-Flask-Cors==4.0.1
-pymongo==4.7.2
-pandas==2.2.2
-scikit-learn==1.4.2
-python-dotenv==1.0.1
-thefuzz==0.22.1
-Werkzeug==3.0.3
+Flask
+Flask-Cors
+pymongo
+pandas
+scikit-learn
+python-dotenv
+thefuzz
+Werkzeug
